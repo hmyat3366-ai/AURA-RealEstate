@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact The Agency</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style data-purpose="custom-fonts">
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        .serif-font {
+            font-family: 'Playfair+Display', serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        agency: {
+                            navy: '#050B20',
+                            gold: '#C5A365',
+                            gray: '#F5F5F5',
+                            border: '#E5E5E5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-900 antialiased flex flex-col min-h-screen">
+    <!-- BEGIN: HeaderNav -->
+    <header class="bg-agency-navy text-white px-8 py-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a class="flex-shrink-0" href="#">
+                <img alt="The Agency Logo" class="h-12 w-12 rounded-full border border-agency-gold"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDroBq8nK7jGomj1wCuBR6Wlq8_FXFRCrsGd_hW97Xz_UiF3NEIJuYtH4xMZE32I-dXr4LYnza1ciJKtx6y5-E6EyON24zO5sIF83FEyZmST0SFPhtizVGsV2c49WcfvUWhSmAkbqejtEh_NSdTVxg_iLTPiclvR-VbTZ5Krzr0BAqvl7-xMiAhxNZ4oAJBewPqiEIT2A8op9ZQ089qnAAgKVBL3IWQpByBZSz4QPXkxABQ8HcN18Pmlgdcikva-OMd0Ur0aiQCsasw" />
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wider">
+                <a class="hover:text-agency-gold transition-colors" href="#">BUY</a>
+                <a class="hover:text-agency-gold transition-colors" href="#">SELL</a>
+                <a class="hover:text-agency-gold transition-colors" href="#">RENT</a>
+                <a class="hover:text-agency-gold transition-colors" href="#">AGENT</a>
+                <a class="hover:text-agency-gold transition-colors" href="#">REGION</a>
+                <a class="hover:text-agency-gold transition-colors" href="#">SERVICE</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button
+                    class="border border-white/30 px-6 py-2 rounded text-sm hover:border-white transition-colors">Sign
+                    in</button>
+            </div>
+        </div>
+    </header>
+    <!-- END: HeaderNav -->
+    <main class="flex-grow">
+        <!-- BEGIN: PageTitle -->
+        <section class="py-24 text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-semibold tracking-wide text-agency-navy mb-6 uppercase">Contact The
+                Agency</h1>
+            <p class="text-2xl md:text-3xl serif-font italic text-gray-800">Wherever you're going, we can take you
+                there.</p>
+        </section>
+        <!-- END: PageTitle -->
+        <!-- BEGIN: ContactFormSection -->
+        <section class="bg-agency-gray py-20 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-medium serif-font text-center mb-12">Send Us A Message</h2>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <input
+                                class="w-full border-gray-300 rounded px-4 py-3 focus:ring-agency-navy focus:border-agency-navy bg-white"
+                                placeholder="Ari" type="text" />
+                        </div>
+                        <div>
+                            <input
+                                class="w-full border-gray-300 rounded px-4 py-3 focus:ring-agency-navy focus:border-agency-navy bg-white"
+                                placeholder="John" type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <input
+                            class="w-full border-gray-300 rounded px-4 py-3 focus:ring-agency-navy focus:border-agency-navy bg-white"
+                            placeholder="arrichan7@gmail.com" type="email" />
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <input
+                                class="w-full border-gray-300 rounded px-4 py-3 focus:ring-agency-navy focus:border-agency-navy bg-white"
+                                placeholder="Phone Number" type="tel" />
+                        </div>
+                        <div>
+                            <select
+                                class="w-full border-gray-300 rounded px-4 py-3 focus:ring-agency-navy focus:border-agency-navy bg-white text-gray-500">
+                                <option value="morning">Morning</option>
+                                <option value="afternoon">Afternoon</option>
+                                <option value="evening">Evening</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <select
+                            class="w-full border-gray-300 rounded px-4 py-3 focus:ring-agency-navy focus:border-agency-navy bg-gray-200 text-gray-600">
+                            <option value="">Select An Agent</option>
+                            <!-- Agent options would go here -->
+                        </select>
+                    </div>
+                    <div>
+                        <input
+                            class="w-full border-gray-300 rounded px-4 py-3 focus:ring-agency-navy focus:border-agency-navy bg-white"
+                            placeholder="Brooklynn,DUMBO" type="text" />
+                    </div>
+                    <div>
+                        <textarea
+                            class="w-full border-gray-300 rounded px-4 py-3 focus:ring-agency-navy focus:border-agency-navy bg-white resize-none"
+                            placeholder="Tell About Yourself" rows="6"></textarea>
+                    </div>
+                    <div class="flex items-start space-x-3 max-w-3xl">
+                        <div class="flex items-center h-5">
+                            <input class="focus:ring-agency-navy h-4 w-4 text-agency-navy border-gray-300 rounded mt-1"
+                                id="consent" type="checkbox" />
+                        </div>
+                        <label class="text-sm text-gray-600 leading-relaxed" for="consent">
+                            I agree to be contacted by via email, phone, and text to receive real estate services and
+                            information. You can reply STOP to unsubscribe or HELP for assistance with text messages.
+                            You can also click the unsubscribe link in emails. Message and data rates may apply. Message
+                            frequency may vary. Privacy Policy
+                        </label>
+                    </div>
+                    <div class="text-center pt-8">
+                        <button
+                            class="bg-white border-2 border-agency-navy text-agency-navy font-semibold px-12 py-4 rounded hover:bg-agency-navy hover:text-white transition-colors text-lg"
+                            type="submit">
+                            Let's Connect
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- END: ContactFormSection -->
+    </main>
+    <!-- BEGIN: MainFooter -->
+    <footer class="bg-white pt-24 pb-12 border-t border-agency-border">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <!-- Brand & Logo -->
+            <div class="col-span-1">
+                <div class="bg-agency-navy p-8 rounded-lg inline-block">
+                    <img alt="The Agency Logo Large" class="w-32 h-32 rounded-full border-2 border-agency-gold"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtt-NeBGsRr0OvQKHdn0bBKdGLCaYVcnoU9llWJ3IIIKlTt51sAOTNP1rpcW588JlOPldLT9VvXHLn4GJpTZEfSj4hhqiS6hEjvRp29JII6RMrL_9AWeuark51Ueqn7iJ8nsrvMGZcJRDXH9G8fQUGWtewAB6beAqk8_Ghf80UnFdWwvuOpxEpb10MVE3PfJk-B5sav5I6M6w5zSxJAfAyM4WzU50ugXEzEuDM_AqFj5Q386qdExqgPRVwKcpHgvuk0sBjfKzjkSdg" />
+                </div>
+            </div>
+            <!-- Links Column 1 -->
+            <div class="col-span-1">
+                <h3 class="text-2xl serif-font mb-6">The Agency</h3>
+                <ul class="space-y-4 text-sm text-gray-600">
+                    <li><a class="hover:text-agency-navy" href="#">About Us</a></li>
+                    <li><a class="hover:text-agency-navy" href="#">Magazine</a></li>
+                    <li><a class="hover:text-agency-navy" href="#">Art House</a></li>
+                </ul>
+            </div>
+            <!-- Links Column 2 -->
+            <div class="col-span-1">
+                <h3 class="text-2xl serif-font mb-6">Resources</h3>
+                <ul class="space-y-4 text-sm text-gray-600 uppercase tracking-wider">
+                    <li><a class="hover:text-agency-navy" href="#">BUY</a></li>
+                    <li><a class="hover:text-agency-navy" href="#">SELL</a></li>
+                    <li><a class="hover:text-agency-navy" href="#">RENT</a></li>
+                    <li><a class="hover:text-agency-navy" href="#">AGENT</a></li>
+                    <li><a class="hover:text-agency-navy" href="#">REGION</a></li>
+                    <li><a class="hover:text-agency-navy" href="#">SERVICE</a></li>
+                </ul>
+            </div>
+            <!-- Interactive & Social -->
+            <div class="col-span-1 space-y-10">
+                <div>
+                    <h3 class="text-2xl serif-font mb-4">Get In Touch</h3>
+                    <a class="inline-flex items-center text-sm font-medium border-b border-black pb-1 hover:text-agency-gold hover:border-agency-gold transition-colors"
+                        href="#">
+                        Contact Form
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                            <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="border-t border-gray-300 pt-6">
+                    <h3 class="text-xl serif-font mb-4">The most followed real estate brand</h3>
+                    <div class="flex -space-x-2">
+                        <img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNCNWFBntPmDz91xVr9hQHSiPObaSjQW14tliBSN6AiGbVIsUUvCFGpY63O-hINfUGptSkHA23Dn4VODdS5MbRrzwWaQFjKpdckDPBiOVJWvp5n4qTvlHwBOL9m8w9o6l21kLzhk50kRadHAueGoDR3jbd5szAHcmUCPU0hPJWawXmVLH-qygdQjiO_8T07NSGDp9HnQk-Ds6Ws9QoGbrCeEhsB99gx50rXrIcc441saLPCQ1Vllrb1Rb3FAXRyfxEQ5cHalMiXeAp" />
+                        <img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy4KSD3fuuaE0lFUnbGBp_IpofATDJp_vee31KyxyE05rlmOcLDpMhP4aiCUnnzAcna-I4ROflW9vSQ7-ayi8ItDsxgU4oAq3gu5JR5ydFH9_cWGUUSt9DxTpAI6uaPM9avaoHut3ouZa5b7j2_DDvHjoiqYSrpeiDvWjybqNBNPd-cP3436z5lyB59xz1dbdhzM-V8inyVwfXIxYcNERSPeQPvp5HVxo_OLZD_4tQreGY3AMfTfapEozlFuZXnwgZbt60bT0U2U7o" />
+                        <img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCagyS5wkIYC86e9A5wZQWXxJhAZs8oH4SYajGP8K7TfoTFCirHfQhocGEVpmEQhri1J2EuCUsNZnsSHz5sijxSCVA-LiJElgzFbATrDlK6GyB6jglHz3sKCMJze7CRu5b-doB0FSUCfSVOIXkyM5WOy3L9JFXy3VVahNYGPsV9pt0np1w2sCcLGzsVmgLAgO5Qnm-DkznA4kmC9dFW_8Eh7WfC8j2qVD4oVVfYYfQ0CEm2xFdsb3gfHrdMr7PKYCRPoQ9BSXHywA3T" />
+                        <img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt15CRN02nyJiQG5cM-zv87o2KARCusFSZuqNkRtJWrdF7cD3Y-n0-4fPMLzQEFOzRoMQv4i2KqGzQ5lO_jmoRAfPHJvWXB5yHTuuOQgm7O82Xf2r8iFuq2miqJ4x6hqzBVK4gkWb8jhGRiD3pDk2AGQyQ9zBV6jHtwrnEq3axxT5VKImzmxLm-_WpYI0Zb3WlUfno7JwIw7Kok6RmGZ2oY9vnjmJCa2F1QKe4BGE2UMX3UYPcTGY0z2aWTtpyfPboT8SCa7Fu24hH" />
+                        <img alt="Avatar" class="w-10 h-10 rounded-full border-2 border-white"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd9XboBmMgQfOCiVGXoZljXKw05VfwjV-PILgwn6zNICIvLtBkVERclifPTu7dh2EpGu9kFEehMXpaEfHVRdB7JwId72-0GRghwvmGvo_cv8WPrQCjQgWcGowpxisde37cOvdMF_cfwJNp4SO2g5rS73SysETftfJXls-D_ncYRsSNPq-o3trIBZ1-PnVpNx2zEi4J5PPjWATtHjtWPl5SRLB4caE0ZPI8W1Cqnckbxpm09NoUsQSObOWrdeTYSWcL_Ko-mtWLW8iD" />
+                    </div>
+                </div>
+                <div class="border-t border-gray-300 pt-6">
+                    <h3 class="text-2xl serif-font mb-2">Join The Club</h3>
+                    <p class="text-sm text-gray-600 mb-4">Always be the first to know, sign up for our weekly newsletter
+                    </p>
+                    <div class="flex border-b border-gray-400 pb-2">
+                        <input
+                            class="w-full bg-transparent border-none p-0 focus:ring-0 text-sm text-gray-800 placeholder-gray-400"
+                            placeholder="Enter a emailaddress" type="email" />
+                        <button class="text-gray-600 hover:text-black">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                                <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: MainFooter -->
+    <!-- BEGIN: LegalFooter -->
+    <footer class="bg-agency-navy text-agency-gold text-xs py-8">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-center space-x-4 mb-8 flex-wrap">
+                <a class="hover:text-white" href="#">Terms of Use</a>
+                <a class="hover:text-white" href="#">Privacy Policy</a>
+                <a class="hover:text-white" href="#">Quebec Privacy policy (Law 25)</a>
+                <a class="hover:text-white" href="#">CCPA</a>
+                <a class="hover:text-white" href="#">DMCA</a>
+                <a class="hover:text-white" href="#">Accessibility</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-opacity-80">
+                <div class="space-y-4">
+                    <p>New York State Fair Housing NoticeNew York State Standard Operating Procedures NYC - LONG ISLAND
+                        - BROOKLYNNew York State Notice of Reasonable Accommodations for Persons With Disabilities</p>
+                    <p>Texas Real Estate Commission Information About Brokerage ServicesTexas Real Estate Commission
+                        Consumer Protection Notice</p>
+                    <div class="pt-4 space-y-1">
+                        <p>Search by: LocationIQ.com</p>
+                        <p>Livro de Reclamações</p>
+                        <p>Resolução de Litígios</p>
+                        <p>© 2025 The Agency IP Holdco, LLC. The Agency and The Agency logo are registered trademarks of
+                            The Agency IP Holdco, LLC under license to its parents and affiliates. All rights in such
+                            marks are reserved by The Agency IP Holdco, LLC.</p>
+                    </div>
+                </div>
+                <div>
+                    <p>The Agency fully supports the Equal Housing Opportunity laws. The Agency IP Holdco, LLC and its
+                        parents, affiliates, subsidiaries, franchisees of its affiliates, and network partners make no
+                        representations, warranties, or guaranties as to the accuracy of the information contained
+                        herein, including square footage, lot size or other information concerning the condition,
+                        suitability or features of the property. All material is intended for informational purposes
+                        only and has been obtained from public records, MLS, or other sources believed to be reliable,
+                        but not verified. All prospective buyers should conduct a careful, independent investigation of
+                        the information and property, and consult with appropriate professionals, such as appraisers,
+                        architects, civil engineers, etc. CalDRE #01904054</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: LegalFooter -->
+</body>
+
+</html>

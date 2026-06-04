@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aura Estate - Our Ambition</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style data-purpose="typography">
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .text-navy {
+            color: #0b132b;
+        }
+
+        .bg-navy {
+            background-color: #0b132b;
+        }
+
+        .text-gold {
+            color: #d4af37;
+        }
+
+        .border-gold {
+            border-color: #d4af37;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0b132b',
+                        gold: '#d4af37',
+                        lightgray: '#f5f5f5',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="antialiased">
+    <!-- BEGIN: MainHeader -->
+    <header class="bg-navy text-white px-8 py-6 rounded-b-[40px]">
+        <div class="max-w-7xl mx-auto flex justify-between items-center mb-20">
+            <div class="flex items-center gap-2">
+                <svg fill="none" height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="19" stroke="#D4AF37" stroke-width="2"></circle>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="#D4AF37"
+                        stroke-width="2"></path>
+                    <path d="M15 20C15 17.2386 17.2386 15 20 15C22.7614 15 25 17.2386 25 20" stroke="#D4AF37"
+                        stroke-width="2"></path>
+                    <path d="M20 12V28" stroke="#D4AF37" stroke-width="2"></path>
+                </svg>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm uppercase tracking-wider font-semibold">
+                <a class="hover:text-gold transition" href="#">Buy</a>
+                <a class="hover:text-gold transition" href="#">Sell</a>
+                <a class="hover:text-gold transition" href="#">Rent</a>
+                <a class="hover:text-gold transition" href="#">Agent</a>
+                <a class="hover:text-gold transition" href="#">Region</a>
+                <a class="hover:text-gold transition" href="#">Service</a>
+            </nav>
+            <button
+                class="border border-white/30 px-6 py-2 rounded-full text-sm hover:bg-white hover:text-navy transition">Sign
+                in</button>
+        </div>
+        <div class="max-w-4xl mx-auto text-center pb-24">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/20 text-sm mb-8">
+                <span class="text-gold">●</span> Our Ambition
+            </div>
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">Redefining the Geography of Luxury.
+            </h1>
+            <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto font-light">Founded in 2010, Aura Estate was
+                born from a singular vision: to unify the nation's most diverse landscapes through elite remote
+                expertise and cutting-edge transparency.</p>
+        </div>
+    </header>
+    <!-- END: MainHeader -->
+    <!-- BEGIN: StorySection -->
+    <section class="max-w-6xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img alt="Frank Portrait" class="w-full rounded-2xl object-cover shadow-xl aspect-[4/5]"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPliYVD6P9KSutFLFa6d8ID7MEhnWPNUgNEza9sl27m2FfUQ2f0P6m52Ut2UVaVAfDiA_RtmyojKwJgRcBKZU4JzWeLBaIP1nd3BWNbFt1k-p-IHqjCW9ETqWQSP6noQJyZOZ3hxDU17EDkx8nCDQ-lldRyhnszyzlDIk2Cmw_fWvQ3l3fndmyUQ2Um4OlZfUk1PCR3iP7m_FvANBWBKBYh6E2qftSazfgOgnFXmDjt4Rvj_U-sivD5X3827S7U8rrXnPfgrNB5fen" />
+                <div class="absolute -bottom-6 right-6 bg-navy text-white px-6 py-4 rounded-xl shadow-lg">
+                    <div class="text-2xl font-bold">15+</div>
+                    <div class="text-sm opacity-80">Years of Vision</div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-navy font-semibold uppercase tracking-wider mb-2">The Story of Frank</h3>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-navy mb-8 leading-tight">From a Brooklyn Loft
+                    to a <span class="italic">National Icon</span>.</h2>
+                <p class="text-gray-600 mb-6 text-lg leading-relaxed">In 2010, Frank left a high-stakes career in
+                    finance with a radical idea: Real estate shouldn't be limited by local office hours. He founded Aura
+                    Estate in a small **Brooklyn loft**, which today serves as our **Global Headquarters and Flagship
+                    Office.</p>
+                <p class="text-gray-600 mb-8 text-lg leading-relaxed">Frank's mission was simple: Find the most talented
+                    local experts and give them the freedom to operate remotely while maintaining the soul of the
+                    community.</p>
+                <div class="border border-gray-200 rounded-xl p-4 flex items-center gap-4 bg-white shadow-sm">
+                    <div class="bg-navy p-3 rounded-lg text-gold">
+                        <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"
+                            width="24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-navy">Main Office</h4>
+                        <p class="text-sm text-gray-500">Brooklyn, New York - The heart of Aura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: StorySection -->
+    <!-- BEGIN: CollectiveAmbition -->
+    <section class="bg-white py-24">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="inline-flex justify-center items-center bg-navy p-4 rounded-xl mb-8">
+                <svg class="transform -rotate-45" fill="none" height="24" stroke="#D4AF37" stroke-width="2"
+                    viewbox="0 0 24 24" width="24">
+                    <path d="M12 2L2 22L12 18L22 22L12 2Z"></path>
+                </svg>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-4">Our Team Collective Ambition</h2>
+            <p class="text-lg text-gray-700 font-medium mb-16">One vision, four experts, three regions. We are unified
+                by the standard of excellence.</p>
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Card 1 -->
+                <div class="border border-gray-200 p-8 rounded-2xl text-left hover:shadow-lg transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-navy">
+                            <svg fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"
+                                width="20">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M2 12h20"></path>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg">Local Mastery</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">Our ambition is to remain "locals in every sense,"
+                        living in the pulse of Brooklyn, the sun of Miami, and the wild of Alaska.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="border border-gray-200 p-8 rounded-2xl text-left hover:shadow-lg transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-navy">
+                            <svg fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"
+                                width="20">
+                                <path d="M23 6l-9.5 9.5-5-5L1 18"></path>
+                                <path d="M17 6h6v6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg">Elite Performance</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">To consistently deliver a 5.0/5.0 experience,
+                        ensuring that every relocation is a seamless life upgrade, not just a transaction.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="border border-gray-200 p-8 rounded-2xl text-left hover:shadow-lg transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-navy">
+                            <svg fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"
+                                width="20">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg">Lifestyle Discovery</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">To act as discovery guides, uncovering the hidden
+                        gems of our regions that only a long-term resident could know.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="border border-gray-200 p-8 rounded-2xl text-left hover:shadow-lg transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div
+                            class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-navy">
+                            <svg fill="none" height="20" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"
+                                width="20">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-navy text-lg">Trust Pillars</h3>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">To build an unbreakable bond of trust with every
+                        client through absolute financial and structural transparency.</p>
+                </div>
+            </div>
+            <!-- Unified Standard Banner -->
+            <div
+                class="mt-16 max-w-3xl mx-auto border border-gray-200 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm bg-white">
+                <div class="flex -space-x-4">
+                    <img alt="Team member" class="w-12 h-12 rounded-full border-2 border-white"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdRdYLDzG5u9GT7KG8_f9IZDFE4kFY-rzLH_brib6z_TmuyZIPz93DCSnmnKauFCx2GXrpP1bcLwawCKyl3rjBxRcL3Q1Iq5qsPlO8rid4ayQtYHk9yxpyTFsgO16fDLDiBd_aGdLwst1aDs_lEC-nsxJmN8biLqn3VhWsWYjTbFmOsQW_ThLenc-qZbJCHLDDTp-9igNipXv6H17l1ybMzA9wOcqjvYE4uXnrFx991UDfAuGXV0A_DyQfq8pFjV-Jzp7wNV1XQ94o" />
+                    <img alt="Team member" class="w-12 h-12 rounded-full border-2 border-white"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0zgkWIdbvnNYLHSBnKk41tt2xdLco0DqramfeW7xIeSKCUukCAqHRIpEEh397Lr7U64q6XkhGH6abh-3Su3T2EHtEqSr9HPHqMUIzVSRrnrPd88vsYiKZ9eJHmVZYEqf8wSoocuc6fXgPsWmOij1LH3Tij1WrU_E8xOJgIfD04R5TlDbxEK8vdVwypkf2zA-c52wXtr2rmLEniDdYIZyMNzBfALgxnEiimHphV3Y8yhy20_hDHJx25MBL47WSdgUjwsU6EVQto7-J" />
+                    <img alt="Team member" class="w-12 h-12 rounded-full border-2 border-white"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPWgjAhKaCKAbzn91NDB7FiJIChkMcD_ryNiiymZhdv_NIPGd44xmNkV5nwXN28AihzeC9cii_fUOuMwMCh-yc3zkmZDJW3ZOIEhmbo2LStIW1DLNY6EywNRIJVLeM-M-1gXeNm6BclZgofebISiWJS_DN2cnK2NjZTDthfDcPYk6pGOm9iNWJ733WD20Rakkm3udNHYafhbUYNuWJVu67i0Fd_gGfGOImBw34gjAo9BL86Vrnp7gWpzfvMeiy3pPcE4D239YSuXRo" />
+                    <img alt="Team member" class="w-12 h-12 rounded-full border-2 border-white"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBfT2ehAqJxDLqTbWnlIX80OEKpyQGLhNod6uI-Csa3SIl1l5HND8IN_3_-LFPgULtr72va4raic1Nb9wdhdNmkUMRBvgqPtDgmIRmtm1gs9A9boncFGmlizsd3PSRPOdUD7RIT0Wdc9TZvFghcI8mtsOkC6opt7x9JV90bcKbYnByAaBrtm6jFR5GfwNCW-tobrdlKR2PICl96Rtqf4MAGA26d4aO5dKYIK7KIVRpIoTCc7vwAjZEPQ_wVW5_4lhhxp2guISaRePi" />
+                </div>
+                <div class="text-center sm:text-left">
+                    <h4 class="font-bold text-navy text-lg">The Unified Aura Standard</h4>
+                    <p class="text-gray-500 text-sm italic">"Different locations, one shared heartbeat of excellence."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: CollectiveAmbition -->
+    <!-- BEGIN: ThreePillars -->
+    <section class="max-w-6xl mx-auto px-6 py-24 text-center">
+        <h2 class="text-4xl md:text-5xl font-serif font-bold text-navy mb-4">The Three Pillars strategy</h2>
+        <p class="text-xl text-gray-600 mb-16">Why we chose Brooklyn, Miami, and Alaska as our founding regions.</p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Pillar 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-left">
+                <div class="w-12 h-12 bg-navy rounded-xl flex items-center justify-center text-gold mb-6">
+                    <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+                        <rect height="20" rx="2" ry="2" width="16" x="4" y="2"></rect>
+                        <path d="M9 22v-4h6v4"></path>
+                        <path d="M8 6h.01"></path>
+                        <path d="M16 6h.01"></path>
+                        <path d="M12 6h.01"></path>
+                        <path d="M12 10h.01"></path>
+                        <path d="M12 14h.01"></path>
+                        <path d="M16 10h.01"></path>
+                        <path d="M16 14h.01"></path>
+                        <path d="M8 10h.01"></path>
+                        <path d="M8 14h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-navy mb-4">Urban Energy</h3>
+                <p class="text-gray-600 text-sm leading-relaxed"><strong class="text-navy">**Brooklyn**</strong>
+                    represents the cultural and economic pulse of the city. It is our headquarters and the testing
+                    ground for our most innovative urban relocation strategies.</p>
+            </div>
+            <!-- Pillar 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-left">
+                <div class="w-12 h-12 bg-navy rounded-xl flex items-center justify-center text-gold mb-6">
+                    <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+                        <path d="M12 2v20"></path>
+                        <path d="M12 2l-4 4"></path>
+                        <path d="M12 2l4 4"></path>
+                        <path d="M12 7l-4 4"></path>
+                        <path d="M12 7l4 4"></path>
+                        <path d="M12 12l-4 4"></path>
+                        <path d="M12 12l4 4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-navy mb-4">Coastal Wealth</h3>
+                <p class="text-gray-600 text-sm leading-relaxed"><strong class="text-navy">**Miami**</strong> was
+                    selected to bridge the gap between high-yield investment and the coastal lifestyle, serving as our
+                    gateway to international luxury markets.</p>
+            </div>
+            <!-- Pillar 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm text-left">
+                <div class="w-12 h-12 bg-navy rounded-xl flex items-center justify-center text-gold mb-6">
+                    <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24">
+                        <path d="M8 3l4 8 5-5 5 15H2L8 3z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-navy mb-4">Wilderness Peace</h3>
+                <p class="text-gray-600 text-sm leading-relaxed"><strong class="text-navy">**Alaska**</strong>
+                    represents the soul of our firm—a sanctuary for those seeking raw beauty and tranquility away from
+                    the noise of the modern world.</p>
+            </div>
+        </div>
+    </section>
+    <!-- END: ThreePillars -->
+    <!-- BEGIN: ExpansionSection -->
+    <section class="max-w-6xl mx-auto px-6 pb-24">
+        <div class="bg-navy rounded-3xl p-12 md:p-16 relative overflow-hidden">
+            <!-- Abstract globe lines -->
+            <div class="absolute -right-20 -bottom-20 opacity-30">
+                <svg fill="none" height="300" stroke="#D4AF37" stroke-width="2" viewbox="0 0 300 300" width="300">
+                    <circle cx="150" cy="150" r="140"></circle>
+                    <ellipse cx="150" cy="150" rx="70" ry="140"></ellipse>
+                    <path d="M10 150h280"></path>
+                    <path d="M50 80h200"></path>
+                    <path d="M50 220h200"></path>
+                </svg>
+            </div>
+            <div class="relative z-10 max-w-2xl">
+                <h2 class="text-3xl md:text-4xl text-gold font-bold mb-6">The 2026 Expansion.</h2>
+                <p class="text-xl md:text-2xl text-gold/90 font-light leading-snug">Our remote-first success in 2024 has
+                    paved the way for our next chapter. We are currently scouting local experts in **Texas** and
+                    **California** to bring the Aura Experience to the West Coast by Q3 2026.</p>
+            </div>
+        </div>
+    </section>
+    <!-- END: ExpansionSection -->
+    <!-- BEGIN: Footer -->
+    <footer class="bg-white pt-20 pb-10 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Logo -->
+                <div class="col-span-1">
+                    <div class="w-32 h-32 bg-navy flex items-center justify-center rounded-xl">
+                        <svg fill="none" height="60" viewbox="0 0 40 40" width="60" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="19" stroke="#D4AF37" stroke-width="2"></circle>
+                            <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20" stroke="#D4AF37"
+                                stroke-width="2"></path>
+                            <path d="M15 20C15 17.2386 17.2386 15 20 15C22.7614 15 25 17.2386 25 20" stroke="#D4AF37"
+                                stroke-width="2"></path>
+                            <path d="M20 12V28" stroke="#D4AF37" stroke-width="2"></path>
+                        </svg>
+                    </div>
+                </div>
+                <!-- The Agency Links -->
+                <div>
+                    <h4 class="font-serif font-bold text-xl mb-6">The Agency</h4>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li><a class="hover:text-navy" href="#">About Us</a></li>
+                        <li><a class="hover:text-navy" href="#">Magazine</a></li>
+                        <li><a class="hover:text-navy" href="#">Art House</a></li>
+                    </ul>
+                </div>
+                <!-- Resources Links -->
+                <div>
+                    <h4 class="font-serif font-bold text-xl mb-6">Resources</h4>
+                    <ul class="space-y-3 text-sm text-gray-600 uppercase tracking-wider">
+                        <li><a class="hover:text-navy" href="#">Buy</a></li>
+                        <li><a class="hover:text-navy" href="#">Sell</a></li>
+                        <li><a class="hover:text-navy" href="#">Rent</a></li>
+                        <li><a class="hover:text-navy" href="#">Agent</a></li>
+                        <li><a class="hover:text-navy" href="#">Region</a></li>
+                        <li><a class="hover:text-navy" href="#">Service</a></li>
+                    </ul>
+                </div>
+                <!-- Get In Touch & Newsletter -->
+                <div>
+                    <h4 class="font-serif font-bold text-xl mb-4">Get In Touch</h4>
+                    <a class="inline-flex items-center gap-2 text-sm font-semibold border-b-2 border-navy pb-1 mb-8 hover:text-gold hover:border-gold transition"
+                        href="#">
+                        Contact Form <span aria-hidden="true">→</span>
+                    </a>
+                    <h4 class="font-serif font-bold text-lg mb-4">The most followed real estate brand</h4>
+                    <div class="flex space-x-2 mb-8">
+                        <img alt="Follower" class="w-8 h-8 rounded-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNuT9Z-Jojnp5itbmd9694U5AX6V_DysXE5YsD1bYyLfwrLdu-qJXmRd_fPmziyHBzTlbDtB6_X4hrEU3t0usmhiuNyAeT_gyLyDPqmXG5HzhaR4yHTUxABKs0C77emMszOkThMCrdUYBO_LVqJj86mEGbhHM45AEWAg1K6E1GTlKux8ka_QbEHlfKqg59G7svzyUY0CVtX8suDE8iYolYqDa81e23vX7OmpsbYs-txUepy_LP72U2fPX2_PJQucSVgImMal9FSfaA" />
+                        <img alt="Follower" class="w-8 h-8 rounded-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ9xNWlNknmhF6LE9gN3Nz2nyn8EWf0jLmab2p-LQVDrtpmlft903XlsLCextDAKVwxNS4MWvU5QUPvAMPQWj-j4INgcTVknmexe0lbQ_Zy2lBjjKNx_Cfa-xY_7ekOhNF7V0j1W9qm-Ay2SS-DZ3Jy_c5yQRLYRJu9tBQQ0MNjCbdEc_A6ezEz3s-_zJJL7QQ0x2s1A2e0GELCboMw1ss10qCkxWhTKjVon2qIxGtSEG4d4d-TJsFJKtdBTU0zELcbmf81Kh529a3" />
+                        <img alt="Follower" class="w-8 h-8 rounded-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuASmE2eVNW61YfEp1LvtqZ_v4o2UTg3tgf2fRGxrg9iiHk_8lyAu_osZRjTUwQsMOAIujY1mSS4s0Cx6eQ5na6CsnOq-pValLEFcs-k9iqzBe-yYZ8GTIHLK98COISgFKtNLp9ygePeD4Ee1eXjncdoeVcsTKCqFbunQVJycztPdb1hw_ltbKfCuaor4QrjDxcJOKtbjsE8GgJPoj1TzbNIsvjOrwNRY7MthXaetMtbWYtfL5AY74hfe8LdwK5Ci1oho82w2_P13SQB" />
+                        <img alt="Follower" class="w-8 h-8 rounded-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-grBmhPWNSwx72eyUu5mptfUszJ4P53AJE9W2faX0YavWAqUURgiVc9Vn3vF-69fXSYiOJnzde6wwB1lV7G5DTzzwsaZJT4JSuRBJkD0vU0GXZAJ3r3ixkRwRFk7MmU-wiZWFF-ZH6utVnF2tmchGtKQIwcLdqWcsfbRNPEaj-gJAfcJo5iDjQaGEzNY_7z5SVYbDtbOJicKFUjaZ3GOIFzwoXYTrYkC3yjUujAHEpGV-QmI_HPst6hOsScnQrUjcONW81YAbmDF2" />
+                        <div class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-xs">+</div>
+                    </div>
+                    <h4 class="font-serif font-bold text-lg mb-2">Join The Club</h4>
+                    <p class="text-sm text-gray-500 mb-4">Always be the first to know, sign up for our weekly newsletter
+                    </p>
+                    <div class="flex border-b border-gray-300 py-2">
+                        <input class="w-full bg-transparent border-none focus:ring-0 p-0 text-sm placeholder-gray-400"
+                            placeholder="Enter a emailaddress" type="email" />
+                        <button class="text-gray-400 hover:text-navy">→</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Legal Footer Banner -->
+        <div class="bg-navy text-white text-xs py-8 mt-12">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between gap-8 mb-8 text-gold">
+                    <div class="flex gap-4 flex-wrap">
+                        <a class="hover:underline" href="#">Terms of Use</a>
+                        <a class="hover:underline" href="#">Privacy Policy</a>
+                        <a class="hover:underline" href="#">Quebec Privacy policy (Law 25)</a>
+                        <a class="hover:underline" href="#">CCPA</a>
+                        <a class="hover:underline" href="#">DMCA</a>
+                        <a class="hover:underline" href="#">Accessibility</a>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 text-gold/80">
+                    <div class="space-y-4">
+                        <p>New York State Fair Housing NoticeNew York State Standard Operating Procedures NYC - LONG
+                            ISLAND - BROOKLYNNew York State Notice of Reasonable Accommodations for Persons With
+                            Disabilities</p>
+                        <p>Texas Real Estate Commission Information About Brokerage ServicesTexas Real Estate Commission
+                            Consumer Protection Notice</p>
+                        <p>Search by: LocationIQ.com<br />
+                            Livro de Reclamações<br />
+                            Resolução de Litígios<br />
+                            © 2025 The Agency IP Holdco, LLC. The Agency and The Agency logo are registered trademarks
+                            of The Agency IP Holdco, LLC under license to its parents and affiliates. All rights in such
+                            marks are reserved by The Agency IP Holdco, LLC.</p>
+                    </div>
+                    <div>
+                        <p>The Agency fully supports the Equal Housing Opportunity laws. The Agency IP Holdco, LLC and
+                            its parents, affiliates, subsidiaries, franchisees of its affiliates, and network partners
+                            make no representations, warranties, or guaranties as to the accuracy of the information
+                            contained herein, including square footage, lot size or other information concerning the
+                            condition, suitability or features of the property. All material is intended for
+                            informational purposes only and has been obtained from public records, MLS, or other sources
+                            believed to be reliable, but not verified. All prospective buyers should conduct a careful,
+                            independent investigation of the information and property, and consult with appropriate
+                            professionals, such as appraisers, architects, civil engineers, etc. CalDRE #01904054</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: Footer -->
+</body>
+
+</html>
